@@ -1,53 +1,147 @@
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{Introdução} 
+\begin{frame}[t]{Linha de Pesquisa}
+    \framesubtitle{Robôs Aéros} 
     \transdissolve[duration=0.5]
-    Um dos pontos importantes na área da robótica é a interação entre os sistemas, e em decorrência ao programa de formação em robótica uma das lacunas será preenchida com o desenvolvimento do desafio 2.5..
-
-    O desafio consiste em:
-    %\newline
-        \begin{columns}[t]
-            \column{.05\linewidth}
-            \column{.4\linewidth}
-                \begin{enumerate}
-                    \item assimilar o conhecimento da interação em robots;
-                    \item compreender em profundidade os conceitos de simulação, e o;
-                    \item desenvolvimento da liderança em projetos \cite{Mohan2015}.
-                \end{enumerate}
-            \column{.6\linewidth}
-            \begin{center}
-            %\centerline{
-                \begin{figure}
-                    %\includegraphics[width=1\textwidth]{pista}
-                    \caption{Pista de corrida \cite{agostini2007}}
-                    \roundpic[xshift=0cm,yshift=0cm]{2.5cm}{6cm}{pista}
-                    %\caption{Pista de corrida \cite{agostini2007}}
-                \end{figure}
-            %}
-            \end{center}
-        \end{columns}
+    \begin{itemize}
+        \item Missão: Estudo das abordagens sobre robôs áereos autônomos, tendo como foco principal o desenvolvimento de técnicas de pouso e decolagens além de uma abordagem profunda nos controles de vôo.
+        \item Justificativa: A popularização do uso de veículos aéreos em áreas como agricultura, cinematografia, militarismo e entretenimento.
+    \end{itemize}
 %*----------- notes
     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
 %-
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[c]{Objetivo} 
-    \framesubtitle{sub-objetivo}
+\begin{frame}[c]{} 
     \transdissolve[duration=0.5]
    
-    \begin{center}
-        \Wider{%
-        \begin{shaded}
-        \begin{center}
-            \vspace*{0.5cm}
-            \resizebox{!}{0.7cm}{%
-                \color{bg} O objetivo é ter um objetivo.
-            }%
-        \end{center}
-        \end{shaded}
-        }%
-    \end{center}
+    \begin{columns}
+        \column{.01\textwidth}
+        \column{.49\textwidth}
+        \includegraphics[trim = 0 0 0 0, clip, width=1\textwidth,height=0.45\textwidth]{img1}
+        \!\\
+        \includegraphics[trim = 0 0 0 0, clip, width=1\textwidth,height=0.45\textwidth]{img2}
+
+        \column{.49\textwidth}
+        \includegraphics[trim = 0 0 0 0, clip, width=1\textwidth,height=0.45\textwidth]{img3}
+        \!\\
+        \includegraphics[trim = 0 0 0 0, clip, width=1\textwidth,height=0.45\textwidth]{img4}
+        \column{.01\textwidth}
+    \end{columns}
     
    
+%*----------- notes
+    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[c]{Aplicações} 
+    \transdissolve[duration=0.5]
+   
+    \begin{columns}
+        \column{.01\textwidth}
+        \column{.49\textwidth}
+        \includemedia[
+      width=1\linewidth,
+      totalheight=0.8\linewidth,
+      activate=pageopen,
+      passcontext, 
+      addresource=./Source/movies/agricultura1.mp4,
+      flashvars={
+      source=./Source/movies/agricultura1.mp4
+      &autoPlay=true
+      &autoRewind=true
+      &Loop=true}
+      ]{\fbox{\includegraphics{black}}}{VPlayer.swf}
+        \column{.01\textwidth}
+
+        \column{.49\textwidth}
+        \includemedia[
+      width=1\linewidth,
+      totalheight=0.8\linewidth,
+      activate=pageopen,
+      passcontext, 
+      addresource=./Source/movies/delivery1.mp4,
+      flashvars={
+      source=./Source/movies/delivery1.mp4
+      &autoPlay=true
+      &autoRewind=true
+      &Loop=true}
+      ]{\fbox{\includegraphics{black}}}{VPlayer.swf}
+        \column{.01\textwidth}
+        
+    \end{columns}
+    
+   
+%*----------- notes
+    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[t]{Projeto Carcará}
+    \transdissolve[duration=0.5]
+    \includegraphics[trim = 0 0 0 0, clip, width=1\textwidth,height=0.45\textwidth]{img4}
+    
+%*----------- notes
+    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+%-
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[t]{Projeto Carcará}
+    \framesubtitle{A Plataforma}
+    \transdissolve[duration=0.5]
+    \begin{columns}
+        \column{.01\textwidth}
+        \column{.49\textwidth}
+        \vspace*{0.4cm}
+        \includegraphics[trim = 0 0 0 0, clip, width=1\textwidth]{CARCARAf.png}
+        \column{.5\textwidth}
+        \begin{itemize}
+            \item Quadrotor - Cross configuration (X)
+            \item Câmera frontal e inferior
+            \item Sensores Ultrassônicos
+            \item Laser
+            \item Nvidia Jetson Nano
+            \item Teensy 4.0
+            \item IMU
+        \end{itemize}
+    \end{columns}
+    
+    
+%*----------- notes
+    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+%-
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[t]{Projeto Carcará}
+    \transdissolve[duration=0.5]
+    \framesubtitle{Objetivo}
+    \includegraphics[trim = 0 0 0 0, clip, width=1\textwidth,height=0.7\textheight]{objetivo4.png}
+    
+%*----------- notes
+    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[t]{Projeto Carcará}
+    \transdissolve[duration=0.5]
+    \includemedia[
+      width=1\linewidth,
+      totalheight=0.45\linewidth,
+      activate=pageopen,
+      passcontext, 
+      addresource=./Source/movies/carcara.mp4,
+      flashvars={
+      source=./Source/movies/carcara.mp4
+      &autoPlay=true
+      &autoRewind=true
+      &Loop=true}
+      ]{\fbox{\includegraphics{black}}}{VPlayer.swf}
+    
+%*----------- notes
+    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[t]{Desafio da Linha de Pesquisa}
+    \transdissolve[duration=0.5]
+    
+    
 %*----------- notes
     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
