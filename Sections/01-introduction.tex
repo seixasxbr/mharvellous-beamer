@@ -194,39 +194,81 @@
         \vspace*{0.5cm}
         \includegraphics[trim = 200 0 300 100, clip, width=1\textwidth]{ardrone.png}
         \column{.49\textwidth}
-        \Large{
+        \large{
         \begin{itemize}
             \item Plataforma: AR Drone 2.0
-            \item Ambiente: Simulação
-            \item Objetivo: Realizar seguimento de trajetória circular
+            \item Objetivo: Realizar seguimento de uma trajetória circular
             \item Framework: ROS Noetic
+            \item Ambiente: Simulação (Gazebo)
+            \item \url{https://github.com/Brazilian-Institute-of-Robotics/bir_aerial_challenge}
         \end{itemize}
         }
         \column{.01\textwidth}
     \end{columns}
-
-    
 %*----------- notes
     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{Ferramentas de Auxílio}
+\begin{frame}[t]{Desafio da Linha de Pesquisa}
+    \framesubtitle{Trajetória}
     \transdissolve[duration=0.5]
-    \begin{columns}
-        \column{.01\textwidth}
-        \column{.49\textwidth}
-        \vspace*{0.8cm}
-        \includegraphics[trim = 0 120 0 120, clip, width=1\textwidth]{mendeley.png}
-        \column{.49\textwidth}
-        \vspace*{0.8cm}
-        \includegraphics[trim = 30 0 30 0, clip, width=1\textwidth]{trello.png}
-        \column{.01\textwidth}
-    \end{columns}
+    \centering
+    \vspace*{.6cm}
+    \huge
 
+    $\begin{bmatrix}
+        X_R\\ 
+        Y_R\\ 
+        Z_R\\ 
+        \psi_R
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+        0,8\cdot sen(0,4\cdot t)\\ 
+        0,8\cdot cos(0,4\cdot t)\\ 
+        0,7+0,2\cdot cos(0,4\cdot t)\\
+        0
+        \end{bmatrix}$
+%*----------- notes
+    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[t]{Desafio da Linha de Pesquisa}
+    \transdissolve[duration=0.5]
+    \includemedia[
+      width=1\linewidth,
+      totalheight=0.45\linewidth,
+      activate=pageopen,
+      passcontext, 
+      addresource=./Source/movies/challenge_drone.mp4,
+      flashvars={
+      source=./Source/movies/challenge_drone.mp4
+      &autoPlay=true
+      &autoRewind=true
+      &Loop=true}
+      ]{\fbox{\includegraphics{black}}}{VPlayer.swf}
     
 %*----------- notes
     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
+% %*----------- SLIDE -------------------------------------------------------------
+% \begin{frame}[t]{Ferramentas de Auxílio}
+%     \transdissolve[duration=0.5]
+%     \begin{columns}
+%         \column{.01\textwidth}
+%         \column{.49\textwidth}
+%         \vspace*{0.8cm}
+%         \includegraphics[trim = 0 120 0 120, clip, width=1\textwidth]{mendeley.png}
+%         \column{.49\textwidth}
+%         \vspace*{0.8cm}
+%         \includegraphics[trim = 30 0 30 0, clip, width=1\textwidth]{trello.png}
+%         \column{.01\textwidth}
+%     \end{columns}
+
+    
+% %*----------- notes
+%     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+% \end{frame}
 %-
 % {
 % \setbeamertemplate{background}
